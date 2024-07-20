@@ -63,7 +63,7 @@ const share = [
 const ctInfo = [
   {
     icon: faCalendarDay,
-    text: 'แข่งขันวันเสาร์ที่ 27 สิงหาคม 2567 ในรูปแบบออนไลน์',
+    text: 'แข่งขันวันศุกร์ที่ 23 สิงหาคม 2567 ณ โรงเรียนมหิดลวิทยานุสรณ์',
   },
   {
     icon: faPeopleGroup,
@@ -185,7 +185,7 @@ export default function Home() {
                 ระดับมัธยมศึกษาตอนต้นประจำปี พ.ศ. 2567
               </span>
             </div>
-            <div className='w-full px-4 flex flex-col items-center gap-2 md:gap-4'>
+            {/* <div className='w-full px-4 flex flex-col items-center gap-2 md:gap-4'>
               <div className='flex flex-wrap gap-2 md:gap-4 justify-center md:mt-2'>
                 <Link
                   href={
@@ -228,9 +228,9 @@ export default function Home() {
                 <FontAwesomeIcon icon={faFileLines} />
                 <span>รายละเอียดการสอบ</span>
               </a>
-            </div>
+            </div> */}
             <div className='w-full' />
-            <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
+            {/* <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
               <label
                 tabIndex='0'
                 className='ds-btn ds-btn-sm ds-btn-ghost font-IBMPlex font-bold text-primary md:ds-btn-md md:text-xl lg:text-2xl m-1 space-x-2'
@@ -278,7 +278,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className='w-full' />
             <div className='max-w-7xl pt-5 px-4 space-y-4 text-center'>
               <span className='text-xl md:text-2xl lg:text-4xl font-IBMPlex font-bold'>
