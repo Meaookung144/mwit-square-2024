@@ -154,8 +154,8 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       const endRegistTime =
-        Date.parse('16 Aug 2023 23:59:59 GMT+7') - new Date()
-      const testTime = Date.parse('27 Aug 2023 08:00:00 GMT+7') - new Date()
+        Date.parse('16 Aug 2024 23:59:59 GMT+7') - new Date()
+      const testTime = Date.parse('27 Aug 2024 08:00:00 GMT+7') - new Date()
       setRemainTime(endRegistTime >= 0 ? endRegistTime : testTime)
       setEndReg(endRegistTime < 0)
     }, 100)
