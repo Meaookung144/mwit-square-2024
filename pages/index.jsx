@@ -154,7 +154,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       const endRegistTime =
-        Date.parse('16 Aug 2024 23:59:59 GMT+7') - new Date()
+        Date.parse('19 Aug 2024 23:59:59 GMT+7') - new Date()
       const testTime = Date.parse('23 Aug 2024 08:00:00 GMT+7') - new Date()
       setRemainTime(endRegistTime >= 0 ? endRegistTime : testTime)
       setEndReg(endRegistTime < 0)
@@ -349,7 +349,7 @@ export default function Home() {
               </div>
               <span className='font-IBMPlexLoop text-sm md:text-base lg:text-xl'>
                 {!endReg
-                  ? 'รับสมัครถึง 16 สิงหาคม 2567'
+                  ? 'รับสมัครถึง 19 สิงหาคม 2567'
                   : 'แข่งขัน 23 สิงหาคม 2567'}
               </span>
             </div>
