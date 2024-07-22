@@ -17,7 +17,7 @@ export default function Document() {
         ></meta>
         <meta
           property='og:image'
-          content='https://square.mwit.ac.th/img/ogimage.png'
+          content='https://square.mwit.ac.th/img/ogimage.png?set=1'
         />
 
         <meta name='twitter:card' content='summary_large_image' />
