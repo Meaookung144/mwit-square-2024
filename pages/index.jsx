@@ -185,11 +185,11 @@ export default function Home() {
                 ระดับมัธยมศึกษาตอนต้นประจำปี พ.ศ. 2567
               </span>
             </div>
-            {/* <div className='w-full px-4 flex flex-col items-center gap-2 md:gap-4'>
+            <div className='w-full px-4 flex flex-col items-center gap-2 md:gap-4'>
               <div className='flex flex-wrap gap-2 md:gap-4 justify-center md:mt-2'>
                 <Link
                   href={
-                    'download/ระเบียบการสอบ_MWIT_Square_14th_และคู่มือการใช้งานโปรแกรม_Google.pdf'
+                    'download/ระเบียบการแข่งขัน.pdf'
                   }
                 >
                   <a
@@ -204,7 +204,7 @@ export default function Home() {
                     </div>
                   </a>
                 </Link>
-                <Link
+                {/* <Link
                   href={
                     'download/รายชื่อผู้มีสิทธิ์เข้าแข่งขัน_MWIT_Square_14th.pdf'
                   }
@@ -216,21 +216,21 @@ export default function Home() {
                   >
                     <FontAwesomeIcon icon={faClipboardCheck} />
                     <span>รายชื่อผู้มีสิทธิ์เข้าแข่งขัน</span>
-                  </a>
-                </Link>
+                  </a> 
+                </Link>*/}
               </div>
               <a
                 className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                href='download/รายละเอียดการสอบ_MWIT_Square_14th.pdf'
+                href='download/รายละเอียดการแข่งขัน.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <FontAwesomeIcon icon={faFileLines} />
                 <span>รายละเอียดการสอบ</span>
               </a>
-            </div> */}
+            </div>
             <div className='w-full' />
-            {/* <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
+            <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
               <label
                 tabIndex='0'
                 className='ds-btn ds-btn-sm ds-btn-ghost font-IBMPlex font-bold text-primary md:ds-btn-md md:text-xl lg:text-2xl m-1 space-x-2'
@@ -278,12 +278,12 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
             <div className='w-full' />
             <div className='max-w-7xl pt-5 px-4 space-y-4 text-center'>
-              <span className='text-xl md:text-2xl lg:text-4xl font-IBMPlex font-bold'>
+              {/* <span className='text-xl md:text-2xl lg:text-4xl font-IBMPlex font-bold'>
                 {'ติดตามการรับสมัครเร็ว ๆ นี้'}
-              </span>
+              </span> */}
               {/* <span className='text-xl md:text-2xl lg:text-4xl font-IBMPlex font-bold'>
                 ผลการแข่งขันรอบชิงชนะเลิศ
               </span>
