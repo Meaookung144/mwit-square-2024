@@ -75,7 +75,7 @@ const ctInfo = [
   },
   {
     icon: faTrophy,
-    text: 'ได้รับเกียรติบัตรและทุนการศึกษาสูงสุด 5,000 บาท',
+    text: 'ได้รับเกียรติบัตรและทุนการศึกษาสูงสุด 6,000 บาท',
   },
 ]
 
@@ -99,7 +99,7 @@ const doc = [
 const awardList = [
   {
     name: 'รางวัลชนะเลิศ',
-    sub: 'ทุนการศึกษา 5,000 บาท',
+    sub: 'ทุนการศึกษา 6,000 บาท',
     std: [
       'เด็กหญิงพิชชาญาณ์ เพชรศรีทอง',
       'เด็กหญิงฐิติธรณ์ สุวรรณนิตย์',
@@ -198,12 +198,21 @@ export default function Home() {
                     rel='noopener noreferrer'
                   >
                     <FontAwesomeIcon icon={faFileInvoice} />
-                    <span>ระเบียบการสอบ</span>
+                    <span>ระเบียบการแข่งขัน</span>
                     <div className='absolute rotate-[5deg] -right-2 md:-right-3 -top-3 text-[0.65rem] md:text-sm lg:text-[0.95rem] py-[0.15rem] sm:py-1 px-2 rounded-full text-white bg-primary'>
                       NEW!
                     </div>
                   </a>
                 </Link>
+                  <a
+                  className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                  href='download/รายละเอียดการแข่งขัน.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FontAwesomeIcon icon={faFileLines} />
+                  <span>รายละเอียดการแข่งขัน</span>
+                </a>
                 {/* <Link
                   href={
                     'download/รายชื่อผู้มีสิทธิ์เข้าแข่งขัน_MWIT_Square_14th.pdf'
@@ -219,15 +228,7 @@ export default function Home() {
                   </a> 
                 </Link>*/}
               </div>
-              <a
-                className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                href='download/รายละเอียดการแข่งขัน.pdf'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon icon={faFileLines} />
-                <span>รายละเอียดการสอบ</span>
-              </a>
+              
             </div>
             <div className='w-full' />
             <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
