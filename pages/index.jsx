@@ -150,6 +150,9 @@ export default function Home() {
   const [remainTime, setRemainTime] = useState(0)
   const [endReg, setEndReg] = useState(false)
   const router = useRouter()
+  const [data, setData] = useState();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -159,10 +162,31 @@ export default function Home() {
       setRemainTime(endRegistTime >= 0 ? endRegistTime : testTime)
       setEndReg(endRegistTime < 0)
     }, 100)
+    
     return () => {
       clearInterval(timer)
     }
   }, [])
+  useEffect(() => {
+    fetch('https://script.google.com/macros/s/AKfycbxsu7basoCsJjYVTe-c6Bw3WHG8aTGteUYpetkngjqRXTEdLcyyQI4VScdR_R2p93YFvg/exec')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log('Fetched data:', data); // Log the entire JSON response
+        setData(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Fetching error:', error);
+        setError(error.message);
+        setLoading(false);
+      });
+  }, []);
+
 
   return (
     <>
@@ -279,6 +303,13 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className='bg-accent rounded-md text-center p-2'>
+              <div className='font-IBMPlexLoop text-bold text-xl md:text-2xl'>
+                {loading && <p>Loading...</p>}
+                {error && <p>Error: {error}</p>}
+                {!loading && !error && data && <p>สมัครมาแล้ว: {data.team_count} ทีม</p>}
+              </div>
             </div>
             <div className='w-full' />
             <div className='max-w-7xl pt-5 px-4 space-y-4 text-center'>
