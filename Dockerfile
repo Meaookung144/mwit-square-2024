@@ -27,10 +27,7 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
 
-# prisma
-RUN npx prisma generate
-
-COPY next.config.js tsconfig.json ./
+COPY next.config.js ./
 COPY tailwind.config.js ./
 
 RUN \
