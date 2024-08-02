@@ -237,6 +237,20 @@ export default function Home() {
                   <FontAwesomeIcon icon={faFileLines} />
                   <span>รายละเอียดการแข่งขัน</span>
                 </a>
+                <Link
+                  href={
+                    'https://forms.gle/wS2DoKS73JUTb8Kx9'
+                  }
+                >
+                  <a
+                    className='ds-btn ds-btn-sm ds-btn-primary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faClipboardCheck} />
+                    <span>ลิ้งค์สมัครแข่งขัน</span>
+                  </a> 
+                </Link>
                 {/* <Link
                   href={
                     'download/รายชื่อผู้มีสิทธิ์เข้าแข่งขัน_MWIT_Square_14th.pdf'
@@ -250,7 +264,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faClipboardCheck} />
                     <span>รายชื่อผู้มีสิทธิ์เข้าแข่งขัน</span>
                   </a> 
-                </Link>*/}
+                </Link> */}
               </div>
               
             </div>
