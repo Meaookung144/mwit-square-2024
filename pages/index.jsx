@@ -15,6 +15,7 @@ import {
   faEarthAsia,
   faClipboardCheck,
   faFileInvoice,
+  faSheetPlastic,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faFileWord,
@@ -237,20 +238,7 @@ export default function Home() {
                   <FontAwesomeIcon icon={faFileLines} />
                   <span>รายละเอียดการแข่งขัน</span>
                 </a>
-                <Link
-                  href={
-                    'https://forms.gle/wS2DoKS73JUTb8Kx9'
-                  }
-                >
-                  <a
-                    className='ds-btn ds-btn-sm ds-btn-primary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <FontAwesomeIcon icon={faClipboardCheck} />
-                    <span>ลิ้งค์สมัครแข่งขัน</span>
-                  </a> 
-                </Link>
+                
                 {/* <Link
                   href={
                     'download/รายชื่อผู้มีสิทธิ์เข้าแข่งขัน_MWIT_Square_14th.pdf'
@@ -265,6 +253,39 @@ export default function Home() {
                     <span>รายชื่อผู้มีสิทธิ์เข้าแข่งขัน</span>
                   </a> 
                 </Link> */}
+              </div>
+              <div className='flex flex-wrap gap-2 md:gap-4 justify-center md:mt-2'>
+                <Link
+                  href={
+                    'https://forms.gle/wS2DoKS73JUTb8Kx9'
+                  }
+                >
+                  <a
+                    className='ds-btn ds-btn-sm ds-btn-primary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faClipboardCheck} />
+                    <span>ลิ้งค์สมัครแข่งขัน</span>
+                  </a> 
+                </Link>
+                <Link
+                  href={
+                    'https://docs.google.com/spreadsheets/d/1oZukn1blDcYMg69jn0hka4kxizpDO4W2vjZ1SFQfwBw/edit?usp=sharing'
+                  }
+                >
+                  <a
+                    className='relative ds-btn ds-btn-sm text-white bg-gradient-to-r from-pa to-pb hover:scale-105 transition-all duration-200 font-IBMPlex font-semibold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FontAwesomeIcon icon={faSheetPlastic} />
+                    <span>ตรวจสอบสถานะการลงทะเบียน</span>
+                    <div className='absolute rotate-[5deg] -right-2 md:-right-3 -top-3 text-[0.65rem] md:text-sm lg:text-[0.95rem] py-[0.15rem] sm:py-1 px-2 rounded-full text-white bg-primary'>
+                      NEW!
+                    </div>
+                  </a>
+                </Link>
               </div>
               
             </div>
