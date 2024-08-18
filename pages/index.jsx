@@ -224,9 +224,9 @@ export default function Home() {
                   >
                     <FontAwesomeIcon icon={faFileInvoice} />
                     <span>ระเบียบการแข่งขัน</span>
-                    <div className='absolute rotate-[5deg] -right-2 md:-right-3 -top-3 text-[0.65rem] md:text-sm lg:text-[0.95rem] py-[0.15rem] sm:py-1 px-2 rounded-full text-white bg-primary'>
+                    {/* <div className='absolute rotate-[5deg] -right-2 md:-right-3 -top-3 text-[0.65rem] md:text-sm lg:text-[0.95rem] py-[0.15rem] sm:py-1 px-2 rounded-full text-white bg-primary'>
                       NEW!
-                    </div>
+                    </div> */}
                   </a>
                 </Link>
                   <a
@@ -239,9 +239,9 @@ export default function Home() {
                   <span>รายละเอียดการแข่งขัน</span>
                 </a>
                 
-                {/* <Link
+                <Link
                   href={
-                    'download/รายชื่อผู้มีสิทธิ์เข้าแข่งขัน_MWIT_Square_14th.pdf'
+                    'download/รายชื่อผู้เข้าแข่งขัน.pdf'
                   }
                 >
                   <a
@@ -251,10 +251,13 @@ export default function Home() {
                   >
                     <FontAwesomeIcon icon={faClipboardCheck} />
                     <span>รายชื่อผู้มีสิทธิ์เข้าแข่งขัน</span>
+                    {/* <div className='absolute rotate-[5deg] -right-2 md:-right-3 -top-3 text-[0.65rem] md:text-sm lg:text-[0.95rem] py-[0.15rem] sm:py-1 px-2 rounded-full text-white bg-primary'>
+                      NEW!
+                    </div> */}
                   </a> 
-                </Link> */}
+                </Link>
               </div>
-              <div className='flex flex-wrap gap-2 md:gap-4 justify-center md:mt-2'>
+              {/* <div className='flex flex-wrap gap-2 md:gap-4 justify-center md:mt-2'>
                 <Link
                   href={
                     'https://forms.gle/wS2DoKS73JUTb8Kx9'
@@ -286,11 +289,11 @@ export default function Home() {
                     </div>
                   </a>
                 </Link>
-              </div>
+              </div> */}
               
             </div>
             <div className='w-full' />
-            <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
+            {/* <div className='ds-dropdown ds-dropdown-hover sm:ds-dropdown-right'>
               <label
                 tabIndex='0'
                 className='ds-btn ds-btn-sm ds-btn-ghost font-IBMPlex font-bold text-primary md:ds-btn-md md:text-xl lg:text-2xl m-1 space-x-2'
@@ -338,12 +341,13 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className='bg-accent rounded-md text-center p-2'>
               <div className='font-IBMPlexLoop text-bold text-xl md:text-2xl'>
-                {loading && <p>Loading...</p>}
+                {/* {loading && <p>Loading...</p>}
                 {error && <p>Error: {error}</p>}
-                {!loading && !error && data && <p>สมัครมาแล้ว: {data.team_count} ทีม</p>}
+                {!loading && !error && data && <p>สมัครมาแล้ว: {data.team_count} ทีม</p>} */}
+                จำนวนผู้สมัคร: 126 ทีม
               </div>
             </div>
             <div className='w-full' />
